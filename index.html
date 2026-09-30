@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Mumbua Mbithi, a web developer.">
+    <title>Portfolio | Mumbua Mbithi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="nav-bar">
+            <div class="nav-bar__logo">
+                <a href="#hero">Mumbua Mbithi</a>
+            </div>
+            <!-- Hamburger menu button for mobile devices -->
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-bar__menu" id="site-menu" aria-label="Main">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <h1>Welcome to My Portfolio</h1>
+        </section>
+
+        <!-- Signature picture -->
+        <section id="signature" class="signature">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShCJslUoE9zq6yBGo0lQYTjtMtfOKSZNaI17sOKvlPVjrrtSlLN7T97jw&amp;s=10" alt="My Signature" referrerpolicy="no-referrer">
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I am Mumbua Mbithi, a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various frameworks.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <h2>My Services</h2>
+            <p>I offer a range of web development services to help bring your ideas to life.</p>
+            <ul>
+                <li>Custom Website Development</li>
+                <li>Responsive Design</li>
+                <li>Front-end Development</li>
+                <li>Back-end Development</li>
+                <li>Website Maintenance and Support</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <p>Here are some of the projects I have worked on:</p>
+                <div class="project-item">
+                    <h3>Photography Portfolio</h3>
+                    <p>A clean collection of my photography work. Being passionate about capturing moments that tell stories, I have created a diverse range of images that showcase my skills and creativity.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Akan Name Generator</h3>
+                    <p>A simple web application for generating Akan names based on birth dates and gender. This project was created to help users discover their Akan names from their birth information, using JavaScript.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Restaurant Food Ordering App</h3>
+                    <p>A restaurant food ordering application that allows users to browse menus, place orders, and track their delivery status. This project was built using HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Have a question or a project in mind, or want to connect, collaborate, or use any of my services? Get in touch with me directly:</p>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:mumbuabelter8@gmail.com">mumbuabelter8@gmail.com</a></p>
+                <p>Phone / WhatsApp: <a href="https://wa.me/254757470451" target="_blank" rel="noopener noreferrer">+254 757 470 451</a> (calls or WhatsApp)</p>
+                <p>GitHub: <a href="https://github.com/skysparl" target="_blank" rel="noopener noreferrer">github.com/skysparl</a></p>
+            </div>
+
+            <!--
+                Messages are delivered to your inbox by Web3Forms (https://web3forms.com).
+                The access key below is not a secret. It only lets people send messages to your inbox.
+            -->
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c4126a70-8706-428d-9a1e-2c9da778ba8e">
+                <input type="hidden" name="subject" value="New message from your portfolio website">
+                <input type="hidden" name="from_name" value="Portfolio Website">
+
+                <!-- Spam trap: hidden from people, bots tend to tick it -->
+                <div class="hp" aria-hidden="true">
+                    <label for="botcheck">Leave this empty</label>
+                    <input type="checkbox" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off">
+                </div>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" maxlength="100" autocomplete="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" maxlength="254" autocomplete="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" maxlength="2000" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+                <!-- Success and error messages appear here -->
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
